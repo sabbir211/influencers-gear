@@ -151,14 +151,14 @@ i {
     padding: 10px;
 }
 
-.bonusSec img {
+.comingProduct img {
     width: 280px;
     height: 226px;
     display: block;
     margin: auto;
 }
 
-.bonusSec input {
+.comingProduct input {
     padding: 10px;
     width: 210px;
     border: none;
@@ -168,7 +168,7 @@ i {
     margin: 4px auto;
 }
 
-.bonusSec .btn {
+.comingProduct .btn {
     padding: 5px 20px;
     display: block;
     margin: auto;
