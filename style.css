@@ -71,6 +71,10 @@ i {
     margin: auto;
 }
 
+.logos {
+    margin: 100px 0px;
+}
+
 .logo {
     padding: 10px 34px;
 }
@@ -127,8 +131,13 @@ i {
     align-items: center;
     font-weight: 600;
     color: #E02C6D;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
+}
+
+.seeMore a {
+    text-decoration: none;
+    color: #E02C6D;
 }
 
 footer {
@@ -151,10 +160,19 @@ footer i {
 
 
 /*----------------------
-Responsiv for mobile 
+Responsiv    for         mobile 
 -----------------------*/
 
 @media only screen and (max-width:576px) {
+    /* utility classes */
+    .dflex {
+        flex-direction: column-reverse;
+    }
+    .btn {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    /* main stye */
     body {
         margin: 0;
     }
@@ -165,18 +183,56 @@ Responsiv for mobile
     header a {
         padding: 5px 7px;
     }
+    .logos {
+        margin: 66px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .logo {
+        padding: 10px;
+    }
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+    .container img {
+        width: 45%;
+    }
+    .container h1 {
+        font-size: 1.45em;
+    }
     .container h2 {
         font-size: 20px;
         line-height: 28px;
     }
-    .btn {
-        font-size: 13px;
-        line-height: 20px;
+    #cartSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cart img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width:768px) and (min-width:577px) {
+    body {
+        margin: 0;
+    }
+    #cartSection {
+        grid-template-columns: repeat(2, 1fr);
     }
     .dflex {
         flex-direction: column-reverse;
     }
-    #cartSection {
-        grid-template-columns: repeat(1, 1fr);
+    .container {
+        width: 100%;
+        padding: 34px;
+    }
+    .container img {
+        width: 55%;
+    }
+    .logos {
+        flex-direction: row;
+        margin: 50px 0;
+        flex-wrap: wrap;
     }
 }
