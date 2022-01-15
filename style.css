@@ -1,0 +1,75 @@
+/* -----------------------
+google fonts imported
+--------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*--------------------
+utility classes
+----------------------*/
+
+.dflex {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 24px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    background: linear-gradient(-90deg, #d67f9d, #9F2BC1)
+}
+
+.btn i {
+    color: white;
+}
+
+
+/* style starting */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 25px 120px 0 120px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a,
+i {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* top banner  */
+
+.container {
+    width: 50%;
+}
+
+.container h2 {
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 70px;
+}
+
+.bannerimg img {
+    width: 87%;
+    background: url("./images/Circle\ design.svg") no-repeat;
+    display: block;
+    margin: auto;
+}
+
+.logo {
+    padding: 10px 34px;
+}
